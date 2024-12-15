@@ -9,5 +9,6 @@ public interface TasksService {
     List<Tasks> findTasks(Long id);
     Tasks saveTask(Tasks task, Long id);
     void deleteTaskById(Long id);
+    Tasks taskUpdate(Tasks task);
 
 }

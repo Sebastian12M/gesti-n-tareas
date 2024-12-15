@@ -27,4 +27,10 @@ public class TasksController {
     public Tasks create(@RequestBody Tasks tasks, @PathVariable Long id) {
         return tasksService.saveTask(tasks, id);
     }
+
+    @PutMapping("/update")
+    public Tasks update(@RequestBody Tasks tasks) {
+        return tasksService.taskUpdate(tasks);
+    }
+
 }

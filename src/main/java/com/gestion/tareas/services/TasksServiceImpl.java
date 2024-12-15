@@ -36,4 +36,9 @@ public class TasksServiceImpl implements TasksService{
     public void deleteTaskById(Long id) {
         tasksRepository.deleteById(id);
     }
+
+    @Override
+    public Tasks taskUpdate(Tasks task) {
+        return tasksRepository.save(task);
+    }
 }
